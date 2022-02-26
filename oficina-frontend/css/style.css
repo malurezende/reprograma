@@ -16,6 +16,10 @@ body {
     margin-bottom: 100px;
 }
 
+.foto-malu{
+    width: 100%;
+}
+
 .banner-overlay{
     position: absolute; 
     top: 0;
@@ -112,9 +116,8 @@ li {
 }
 
 li:nth-child(2n){
-    background-color: green;
     color: white;
-    background-color: #641981;;
+    background-color: #641981;
 }
 
 .container-links {
@@ -169,4 +172,102 @@ li:nth-child(2n){
     display: flex;
     justify-content: center;
     padding: 20px 0;
+}
+
+
+@media screen and (max-width: 1220px) {
+
+    .container-main {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sobre-mim {
+        margin-bottom: 100px;
+        width: 80%;
+    }
+
+    .soft-skills {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .name {
+        font-size: 2.5rem;
+    }
+
+    .subtitulo {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    li {
+        width: 48%;
+    }
+
+    li:nth-child(3n){
+        color: white;
+        background-color: #641981;
+    }
+
+    li:nth-child(4n){
+        color: black;
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container-banner {
+        margin-bottom: 50px;
+    }
+
+    .container-main {
+        margin-bottom: 30px;
+    }
+
+    .titulo-sobre {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .sobre-mim {
+        margin-bottom: 30px;
+    }
+    
+    .sobre-mim p {
+        font-size: 16px;
+
+    }
+
+    .soft-skills h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    li {
+        width: 98%;
+        height: 120px;
+        font-size: 16px;
+    }
+
+    li:nth-child(2n-1){
+        color: white;
+        background-color: #641981;
+    }
+
+    li:nth-child(2n){
+        color: black;
+        background-color: white;
+    }
+
+    .container-links {
+        padding: 40px 0;
+    }
+    
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+    }
 }
